@@ -1,0 +1,21 @@
+{
+    "require": {
+        "voku/simple-mysqli": "^4.4",
+        "marxvn/gdrive": "^1.0",
+        "jmathai/php-multi-curl": "dev-master",
+        "jonnyw/php-phantomjs": "4.*",
+        "diversen/http-send-file": "^1.0",
+        "paquettg/php-html-parser": "^1.7"
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "PhantomInstaller\\Installer::installPhantomJS"
+        ],
+        "post-update-cmd": [
+            "PhantomInstaller\\Installer::installPhantomJS"
+        ]
+    }
+}
